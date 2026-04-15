@@ -1,0 +1,40 @@
+body { /* o el contenedor de tus preguntas */
+  padding: 0 20px; 
+  max-width: 800px; /* Para que en pantallas grandes no se estire infinito */
+  margin: 0 auto;   /* Centra el contenido */
+}
+
+.titulo{
+    color: rgb(122, 71, 23);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.subtitulo{
+    color: #c27832;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contenido{
+    color: rgb(29, 29, 29);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: justify;
+    hyphens: auto; /* Opcional: ayuda a que las palabras se corten con guiones si es necesario */
+}
+
+/* Esto le dará aire al botón para que no se choque con el texto */
+a[href="../index.html"] { 
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none; /* Quita el subrayado si no lo quieres */
+  transition: transform 0.3s ease; /* Para que al pasar el mouse se mueva un poco */
+}
+
+a[href="../index.html"]:hover {
+  transform: translateX(-5px); /* Efecto sutil de movimiento a la izquierda */
+}
